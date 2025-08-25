@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Ghana Estates Directory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header" role="banner">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Ghana Estates Directory home"><i class="fa-solid fa-crown"></i> Ghana Estates Directory</a>
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a href="properties.html"><i class="fa-solid fa-house"></i> Properties</a>
+      <a href="agencies.html"><i class="fa-solid fa-building"></i> Agencies</a>
+      <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a class="btn contact" href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap">
+    <h1>Contact Us</h1>
+    <p class="small" style="margin-bottom:12px">Send us a message and we’ll get back to you. (This static demo uses a mailto link.)</p>
+    <div class="card" style="padding:16px; max-width:720px">
+      <form action="mailto:hello@ghanaestates.example" method="post" enctype="text/plain">
+        <div style="display:grid; gap:10px; grid-template-columns:1fr 1fr">
+          <div><label class="small" for="name">Name</label><input id="name" name="name" required style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)"></div>
+          <div><label class="small" for="email">Email</label><input id="email" name="email" type="email" required style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)"></div>
+          <div style="grid-column:1/-1"><label class="small" for="msg">Message</label><textarea id="msg" name="message" rows="6" required style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)"></textarea></div>
+        </div>
+        <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:10px">
+          <button class="btn btn-ghost" type="reset">Clear</button>
+          <button class="btn btn-primary" type="submit"><i class="fa-regular fa-paper-plane"></i> Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="wrap">
+    <p>© 2025 Ghana Estates Directory. All rights reserved.</p>
+    <p class="links">
+      <a href="index.html">Home</a> ·
+      <a href="properties.html">Properties</a> ·
+      <a href="agencies.html">Agencies</a> ·
+      <a href="about.html">About</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties — Ghana Estates Directory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header" role="banner">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Ghana Estates Directory home"><i class="fa-solid fa-crown"></i> Ghana Estates Directory</a>
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a href="properties.html"><i class="fa-solid fa-house"></i> Properties</a>
+      <a href="agencies.html"><i class="fa-solid fa-building"></i> Agencies</a>
+      <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a class="btn contact" href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  </div>
+</header>
+
+<body data-page="properties">
+<header class="site-header" role="banner">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Ghana Estates Directory home"><i class="fa-solid fa-crown"></i> Ghana Estates Directory</a>
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a href="properties.html"><i class="fa-solid fa-house"></i> Properties</a>
+      <a href="agencies.html"><i class="fa-solid fa-building"></i> Agencies</a>
+      <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a class="btn contact" href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="section">
+    <div class="wrap">
+      <h1 style="margin-bottom:10px">All Properties</h1>
+      <div class="notice small" style="margin-bottom:12px">Tip: Use the filters below or type in the top search on the homepage.</div>
+      <div style="display:grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap:10px; align-items:end;">
+        <div style="grid-column: span 2;">
+          <label for="q" class="small">Search</label>
+          <input id="q" type="search" placeholder="Search (title, city, agency)" aria-label="Search listings" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)" disabled>
+          <div class="small">Use homepage search. This page filters via controls below.</div>
+        </div>
+        <div>
+          <label for="type" class="small">Type</label>
+          <select id="type" aria-label="Filter by property type" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)">
+            <option value="">All</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Land</option>
+          </select>
+        </div>
+        <div>
+          <label for="city" class="small">City</label>
+          <select id="city" aria-label="Filter by city" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)">
+            <option value="">All</option>
+          </select>
+        </div>
+        <div>
+          <label for="min" class="small">Min (GHS)</label>
+          <input id="min" type="number" min="0" placeholder="0" aria-label="Minimum price" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)">
+        </div>
+        <div>
+          <label for="max" class="small">Max (GHS)</label>
+          <input id="max" type="number" min="0" placeholder="Any" aria-label="Maximum price" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)">
+        </div>
+        <div>
+          <label for="beds" class="small">Bedrooms</label>
+          <select id="beds" aria-label="Minimum bedrooms" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)">
+            <option value="">Any</option>
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+          </select>
+        </div>
+        <div style="grid-column: span 6; display:flex; gap:10px; justify-content:flex-end">
+          <button id="apply" class="btn btn-primary"><i class="fa-solid fa-filter"></i> Apply</button>
+          <button id="reset" class="btn btn-ghost"><i class="fa-solid fa-rotate"></i> Reset</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="props-list">
+    <h2 id="props-list">Listings</h2>
+    <div class="grid">
+      <article class="card" data-prop data-type="Residential" data-city="Accra" data-beds="3" data-price="850000" data-text="3-Bed Apartment East Legon Accra Homes Ltd">
+        <a class="thumb" href="property-details/property1.html">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="East Legon apartment exterior at dusk">
+          <span class="tag">Residential</span>
+        </a>
+        <div class="body">
+          <div class="price">GHS 850,000</div>
+          <strong>3-Bed Apartment • East Legon</strong>
+          <div class="meta"><span><i class="fa-solid fa-location-dot"></i> Accra</span> <span><i class="fa-solid fa-bed"></i> 3 bd</span> <span><i class="fa-solid fa-bath"></i> 3 ba</span> <span><i class="fa-regular fa-building"></i> Accra Homes Ltd</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="property-details/property1.html">View Details</a>
+          <a class="btn btn-ghost" href="agency-details/agency1.html">Agency</a>
+        </div>
+      </article>
+
+      <article class="card" data-prop data-type="Commercial" data-city="Kumasi" data-beds="0" data-price="2500000" data-text="Office Complex Adum Kumasi Realty">
+        <a class="thumb" href="property-details/property2.html">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" alt="Adum office complex facade">
+          <span class="tag">Commercial</span>
+        </a>
+        <div class="body">
+          <div class="price">GHS 2,500,000</div>
+          <strong>Office Complex • Adum</strong>
+          <div class="meta"><span><i class="fa-solid fa-location-dot"></i> Kumasi</span> <span><i class="fa-solid fa-maximize"></i> 900 m²</span> <span><i class="fa-regular fa-building"></i> Kumasi Realty</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="property-details/property2.html">View Details</a>
+          <a class="btn btn-ghost" href="agency-details/agency2.html">Agency</a>
+        </div>
+      </article>
+
+      <article class="card" data-prop data-type="Land" data-city="Cape Coast" data-beds="0" data-price="380000" data-text="Beachfront Plot Elmina Cape Coast Lands">
+        <a class="thumb" href="property-details/property3.html">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Elmina beachfront plot with ocean view">
+          <span class="tag">Land</span>
+        </a>
+        <div class="body">
+          <div class="price">GHS 380,000</div>
+          <strong>Beachfront Plot • Elmina</strong>
+          <div class="meta"><span><i class="fa-solid fa-location-dot"></i> Cape Coast</span> <span><i class="fa-solid fa-maximize"></i> 800 m²</span> <span><i class="fa-regular fa-building"></i> Accra Homes Ltd</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="property-details/property3.html">View Details</a>
+          <a class="btn btn-ghost" href="agency-details/agency1.html">Agency</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="wrap">
+    <p>© 2025 Ghana Estates Directory. All rights reserved.</p>
+    <p class="links">
+      <a href="index.html">Home</a> ·
+      <a href="properties.html">Properties</a> ·
+      <a href="agencies.html">Agencies</a> ·
+      <a href="about.html">About</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

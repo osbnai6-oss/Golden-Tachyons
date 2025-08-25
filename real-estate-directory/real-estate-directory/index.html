@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghana Estates Directory — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+<header class="site-header" role="banner">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Ghana Estates Directory home"><i class="fa-solid fa-crown"></i> Ghana Estates Directory</a>
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a href="properties.html"><i class="fa-solid fa-house"></i> Properties</a>
+      <a href="agencies.html"><i class="fa-solid fa-building"></i> Agencies</a>
+      <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a class="btn contact" href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <h1 id="hero-title">Find the Right Property in Ghana</h1>
+      <p>Browse verified listings from trusted agencies across Accra, Kumasi, Cape Coast, Takoradi and more.</p>
+      <form id="homeSearchForm" class="search" role="search" aria-label="Search properties from homepage">
+        <label class="sr-only" for="q-home">Search</label>
+        <input id="q-home" name="q" type="search" placeholder="Search by title, city, or agency…" aria-label="Search by title, city, or agency">
+        <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="feat-props">
+    <h2 id="feat-props">Featured Properties</h2>
+    <div class="grid">
+      <article class="card">
+        <a class="thumb" href="property-details/property1.html" aria-label="View details: 3-Bed Apartment • East Legon">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Modern apartment exterior in East Legon, Accra">
+          <span class="tag">Residential</span>
+        </a>
+        <div class="body">
+          <div class="price">GHS 850,000</div>
+          <div class="meta"><span><i class="fa-solid fa-location-dot"></i> Accra</span> <span><i class="fa-solid fa-bed"></i> 3 bd</span> <span><i class="fa-solid fa-bath"></i> 3 ba</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="property-details/property1.html">View Details</a>
+          <a class="btn btn-ghost" href="agency-details/agency1.html">Agency</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="thumb" href="property-details/property2.html" aria-label="View details: Office Complex • Adum">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" alt="Office complex building in Adum, Kumasi">
+          <span class="tag">Commercial</span>
+        </a>
+        <div class="body">
+          <div class="price">GHS 2,500,000</div>
+          <div class="meta"><span><i class="fa-solid fa-location-dot"></i> Kumasi</span> <span><i class="fa-solid fa-maximize"></i> 900 m²</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="property-details/property2.html">View Details</a>
+          <a class="btn btn-ghost" href="agency-details/agency2.html">Agency</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="thumb" href="property-details/property3.html" aria-label="View details: Beachfront Plot • Elmina">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Beachfront land view in Elmina, Cape Coast">
+          <span class="tag">Land</span>
+        </a>
+        <div class="body">
+          <div class="price">GHS 380,000</div>
+          <div class="meta"><span><i class="fa-solid fa-location-dot"></i> Cape Coast</span> <span><i class="fa-solid fa-maximize"></i> 800 m²</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="property-details/property3.html">View Details</a>
+          <a class="btn btn-ghost" href="agency-details/agency1.html">Agency</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="feat-ag">
+    <h2 id="feat-ag">Featured Agencies</h2>
+    <div class="grid">
+      <article class="card">
+        <a class="thumb" href="agency-details/agency1.html" aria-label="View Accra Homes Ltd">
+          <img src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=1200&auto=format&fit=crop" alt="Agency office lobby with modern decor">
+          <span class="tag">Agency</span>
+        </a>
+        <div class="body">
+          <strong>Accra Homes Ltd</strong>
+          <div class="meta"><i class="fa-solid fa-location-dot"></i> Accra · <i class="fa-solid fa-phone"></i> +233300001111</div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="agency-details/agency1.html">View Profile</a>
+          <a class="btn btn-ghost" href="tel:+233300001111">Call</a>
+        </div>
+      </article>
+      <article class="card">
+        <a class="thumb" href="agency-details/agency2.html" aria-label="View Kumasi Realty">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop" alt="Agency team working at a desk">
+          <span class="tag">Agency</span>
+        </a>
+        <div class="body">
+          <strong>Kumasi Realty</strong>
+          <div class="meta"><i class="fa-solid fa-location-dot"></i> Kumasi · <i class="fa-solid fa-phone"></i> +233320002222</div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="agency-details/agency2.html">View Profile</a>
+          <a class="btn btn-ghost" href="tel:+233320002222">Call</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="wrap">
+    <p>© 2025 Ghana Estates Directory. All rights reserved.</p>
+    <p class="links">
+      <a href="index.html">Home</a> ·
+      <a href="properties.html">Properties</a> ·
+      <a href="agencies.html">Agencies</a> ·
+      <a href="about.html">About</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
